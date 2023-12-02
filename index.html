@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <title>Contraseña Segura</title>
+    <meta name="description" content="Algoritmo para generar contraseña segura">
+    <meta name="author" content="IRINA MEDINA SIERRA" />
+    <meta name="copyright" content="Propietario del copyright" />
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="container bg-light" style="height: 800px;">
+        <div class="row">
+            <div class="col text-center">
+                <p class="fs-4 text-info py-4">Aplicación para crear de Contraseñas Seguras</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-2">
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="domLabel">Dominio</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="dominio" required>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="charlabel">Caracter Especial:</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="caracter" maxlength="1" required>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="nombreLavel">Nombre del Usuario:</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="nombre" required>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="input-group input-group-sm mb-3">
+                    <input type="submit" class="btn btn-info" onclick="creardomWord()" value="Crear Contraseña">
+                </div>
+            </div>
+
+            </div>
+            <div class="row">
+            <div class="col-4 mx-auto pt-5">
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="clavelabel">Contraseña:</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="cuadro_texto">
+                    <button class="btn" onclick="copiarContenido()">¡Copiar!</button>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-4 mx-auto pt-5 text-center">
+            <h5>Verificalo en <a href="https://password.kaspersky.com/" target="_blank">Kaspersky.com</a></h5>
+                </div>
+        </div>
+        </div>
+</body>
+</html>
